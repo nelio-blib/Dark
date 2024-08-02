@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  .toolbar {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  button {
+    background-color: transparent;
+    border: none;
+    color: rgb(200, 15, 15);
+    cursor: pointer;
+    padding: 5px 10px;
+  }
+/* ... (mantenha o código anterior) */
+
+.time-square,
+.info-square {
+  background-color: #444;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.info-square {
+  background-color: #007bff;
+}
+
+#currentTime,
+#randomInfo {
+  margin: 0;
+}
+iframe {
+  position: absolute;
+  top: 80px; /* Altura da barra de ferramentas */
+  left: 0;
+  width: 100%;
+  height: calc(100% - 50px); /* Subtrai a altura da barra de ferramentas */
+  border: none;
+}
+/* ... (mantenha o código anterior) */
+
+.random-time-square {
+  background-color: #444;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+  border-radius: 5px;
+  /* Adiciona uma animação de piscar */
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+/* ... (mantenha o código anterior) */
+
+/* Animação para o botão "Voltar" */
+#backBtn {
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 15px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  position: relative;
+}
+
+#backBtn:before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+  transform: rotate(-45deg);
+  top: 50%;
+  left: -15px;
+  transition: transform 0.3s;
+  opacity: 0;
+}
+
+#backBtn:hover {
+  background-color: #222;
+}
+
+#backBtn:hover:before {
+  transform: translate(-2px, -2px) rotate(-45deg);
+  opacity: 1;
+}
+
+/* Restante do código permanece o mesmo */
+
+
