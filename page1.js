@@ -65,7 +65,7 @@ setInterval(updateCurrentTime, 1000);
 setInterval(updateRandomInfo, 90000);
 
 // Atualiza o horário aleatório e as informações a cada 2 minutos
-setInterval(updateRandomTimeAndInfo, 90000); // 2 minutos em milissegundos
+setInterval(updateRandomTimeAndInfo, 80000); // 2 minutos em milissegundos
 
 
 
